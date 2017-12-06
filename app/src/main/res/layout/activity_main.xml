@@ -7,45 +7,51 @@
     android:background="#f3f3f3"
     android:orientation="vertical"
     tools:context="com.loyo.fasttest.MainActivity">
+
     <FrameLayout
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:paddingLeft="20dp"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp">
+
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:text="FastTest"
             android:textColor="@android:color/white"
-            android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:textStyle="bold"
             android:textSize="25sp"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
             android:background="@null"
-            android:textColor="@android:color/white"
-            android:text="清空下载"
-            android:textSize="20sp"
             android:paddingRight="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="清空下载"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
     </FrameLayout>
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/srlayout"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recuclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </android.support.v4.widget.SwipeRefreshLayout>
+
     <TextView
-        android:textSize="10sp"
-        android:text="乐育安卓内部分发工具"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:layout_height="wrap_content" />
+        android:padding="5dp"
+        android:text="乐育安卓测试分发工具——张杰"
+        android:textSize="10sp" />
 </LinearLayout>
