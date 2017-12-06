@@ -5,6 +5,6 @@ package com.loyo.fasttest.common;
  */
 
 public class Config {
-    public static String url="http://fasttest.dingliqc.com:3000";
+    public static String url="http://androidtest.ukuaiqi.com:3000";
     public static String listUrl=url+"/data/uploadData.json";
 }
